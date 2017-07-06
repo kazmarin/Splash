@@ -1,0 +1,1682 @@
+﻿/* pt-sans-regular - latin */
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/subset-PTSans-Regular.woff2') format('woff2'),
+       url('../fonts/subset-PTSans-Regular.woff') format('woff'),
+       url('../fonts/subset-PTSans-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* pt-sans-700 - latin */
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/subset-PTSans-Bold.woff2') format('woff2'),
+       url('../fonts/subset-PTSans-Bold.woff') format('woff'),
+       url('../fonts/subset-PTSans-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* rubik-regular - latin */
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/subset-Rubik-Regular.woff2') format('woff2'),
+       url('../fonts/subset-Rubik-Regular.woff') format('woff'),
+       url('../fonts/subset-Rubik-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* ubuntu-regular - latin */
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/subset-Ubuntu.woff2') format('woff2'),
+       url('../fonts/subset-Ubuntu.woff') format('woff'),
+       url('../fonts/subset-Ubuntu.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+
+body {
+  min-width: 1200px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.container:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+/* ======================================================
+                   Главная Страница - Index
+=========================================================*/
+
+
+/*===============  Шапка  ===============*/
+
+.page-header {
+  position: absolute;
+  width: 100%;
+  background: transparent;
+}
+
+.logo {
+  float: left;
+  margin-right: 30px;
+  margin-top: 14px;
+  width: 170px;
+}
+
+.main-nav {
+  float: left;
+  margin-right: 30px;
+  width: 570px;
+  font-size: 0;
+  box-sizing: border-box;
+}
+
+.main-nav ul {
+  margin-top: 48px;
+  width: 370px;
+  border-bottom: 2px solid #feb326;
+}
+
+.main-nav-item {
+  display: inline-block;
+  margin-right: 83px;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.main-nav-item:first-child {
+ margin-left: 9px;
+}
+
+.main-nav-item:last-child {
+ margin-right: 9px;
+}
+
+.main-nav-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.basket, .order-call {
+  float: left;
+  width: 170px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.basket {
+  margin-right: 30px;
+  margin-top: 48px;
+  font-size: 16px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.basket:before {
+  content: '';
+  display: inline-block;
+  padding-right: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/spritesheet.png);
+  background-position: -122px -37px;
+}
+
+.order-call {
+  margin-top: 57px;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+
+/*=========  Текст рекламы под заголовком + фон  ============*/
+
+.promo {
+  height: 583px;
+  background: url(../img/fon1-i.jpg) no-repeat;
+  background-size: cover;
+}
+
+.promo-item {
+  float: left;
+  margin-right: 130px;
+  margin-top: 197px;
+  width: 570px;
+  box-sizing: border-box;
+}
+
+.promo-title {
+  font-family: 'Rubik';
+  font-size: 30px;
+  line-height: 40px;
+  color: #fff;
+}
+
+.promo-text {
+  margin-top: 9px;
+  font-size: 20px;
+  line-height: 40px;
+  color: #fff;
+}
+
+.promo-slogan {
+  position: relative;
+  float: right;
+  margin-top: 197px;
+  padding: 0 98px;
+  width: 470px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 30px;
+  color: #9ac3ff;
+}
+
+.promo-slogan:before {
+  content: '‘‘';
+  position: absolute;
+  font-size: 50px;
+  top: -7px;
+  left: 48px;
+}
+
+.promo-slogan:after {
+  content: '’’';
+  position: absolute;
+  font-size: 50px;
+  bottom: -30px;
+  right: 53px;
+}
+
+/*=============  Каталог товаров - Меню  ===============*/
+
+
+.catalog-header {
+   height: 197px;
+   background-color: #fff;
+}
+
+.catalog-title {
+  padding-top: 60px;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #2f4565;
+}
+
+.catalog-nav {
+  margin-top: 32px;
+  font-size: 0;
+  border-bottom: 1px solid #5775aa;
+}
+
+.catalog-nav-item {
+  display: inline-block;
+  margin-right: 30px;
+  width: 170px;
+  box-sizing: border-box;
+}
+
+.catalog-nav-item:last-child {
+  margin-right: 0;
+}
+
+.catalog-nav-item:nth-last-child(-n+2) {
+  width: 270px;
+}
+
+.catalog-link {
+  position: relative;
+  display: block;
+  padding: 12px 0 12px 45px;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+}
+
+.catalog-link:before {
+  content: '';
+  position: absolute;
+}
+
+.catalog-img-fish:before {
+  width: 31px;
+  height: 24px;
+  background-image: url(../img/spritesheet.png);
+  background-position: -171px -99px;
+  left: 35px;
+  top: 20px;
+}
+
+.catalog-img-aquarium:before {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/spritesheet.png);
+  background-position: -5px -5px;
+  left: 12px;
+  top: 15px;
+}
+
+.catalog-img-feed:before{
+  width: 25px;
+  height: 31px;
+  background-image: url(../img/spritesheet.png);
+  background-position: -136px -99px;
+  left: 40px;
+  top: 18px;
+}
+
+.catalog-img-equipment:before {
+  width: 30px;
+  height: 27px;
+  background-image: url(../img/spritesheet.png);
+  background-position: -96px -99px;
+  left: 55px;
+  top: 22px;
+}
+
+.catalog-img-ground:before {
+  width: 30px;
+  height: 28px;
+  background-image: url(../img/spritesheet.png);
+  background-position: -55px -167px;
+  left: 20px;
+  top: 20px;
+}
+
+.catalog-link-active {
+  color: #fff;
+  background: #7fa0dd;
+}
+
+.catalog-img-fish-active:before {
+  width: 31px;
+  height: 24px;
+  background-image: url(../img/spritesheet.png);
+  background-position: -171px -133px;
+  left: 35px;
+  top: 20px;
+}
+
+.catalog-img-aquarium-active:before {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/spritesheet.png);
+  background-position: -45px -5px;
+  left: 12px;
+  top: 15px;
+}
+
+/*=========  Каталог товаров - Карточки товаров (рыбы)  =============*/
+
+.catalog-fish {
+  height: 366px;
+  background-color: #fff;
+}
+
+.catalog-card {
+  padding-top: 26px;
+  font-size: 0;
+}
+
+.card {
+  display: inline-block;
+  margin-right: 30px;
+  width: 170px;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.card-title {
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.card-text {
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.card-text-height {
+  margin-bottom: 4px;
+  line-height: 18px;
+}
+
+/*==================  Раздел - Акции  =================*/
+
+.action {
+  position: relative;
+  height: 400px;
+}
+
+.action:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.action-left, .action-right {
+  float: left;
+  height: inherit;
+  width: 50%;
+}
+
+.action-left {
+  background-image: url(../img/action-left.jpg);
+  background-size: cover;
+}
+
+.action-right {
+  background-image: url(../img/action-right.jpg);
+  background-size: cover;
+}
+
+.action-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+}
+
+.action-item {
+  float: left;
+  width: 50%;
+  height: 400px;
+  box-sizing: border-box;
+}
+
+.action-item-right {
+  position: relative;
+  padding-left: 115px;
+}
+
+.action-item-right:before {
+  content: '';
+  position: absolute;
+  height: 400px;
+  width: 10px;
+  left: -8px;
+  background-color: #feb326;
+}
+
+.action-item-title {
+  margin-top: 56px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #feb326;
+}
+
+.action-item-text {
+  margin-top: 48px;
+  width: 370px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fefefe;
+}
+
+.btn {
+  display: block;
+  width: 170px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+  color: #fefefe;
+  text-decoration: none;
+  background-color: #3f6295;
+}
+
+.btn:active {
+transform: scale(0.95);
+}
+
+.action-btn-left {
+  margin-top: 48px;
+}
+
+.action-btn-right {
+  margin-top: 78px;
+}
+
+/*===========  Раздел - Популярные продукты  ==============*/
+
+.popular-product {
+  height: 600px;
+  background: repeating-linear-gradient(-45deg, #cfe1fb 1px, #d2e4fd 2px, #cee0fa 3px, #bed0e9 4px, #b9cbe5 5px, #bdcfe9 6px, #cadcf6 7px, #d2e4fd 8px);
+}
+
+.popular-title {
+  padding-top: 60px;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #2f4565;
+}
+
+.popular-wrapper {
+  margin-top: 41px;
+  margin-bottom: 54px;
+}
+
+.popular-wrapper:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.popular-item {
+  float: left;
+  margin-right: 30px;
+  width: 270px;
+  height: 310px;
+  background: #fff;
+  border-radius: 7px;
+}
+
+.popular-item:last-child {
+  margin-right: 0px;
+}
+
+/*Карточки в каталоге аквариумов и популярных
+ товаров на всех станицах одинаковые*/
+
+.catalog-good {
+  text-decoration: none;
+  box-shadow: 0 0 7px #030402;
+}
+
+.catalog-good-img {
+  box-sizing: border-box;
+  border-bottom: 1px dotted #d0d0d0;
+}
+
+.catalog-good-title {
+  margin-left: 50px;
+  margin-top: 5px;
+  font-size: 20px;
+  line-height: 40px;
+  color: #000;
+}
+
+.catalog-good-volume,
+.catalog-good-fish,
+.catalog-good-width {
+  margin-left: 50px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #2f4565;
+}
+
+.popular-btn {
+  margin: 0 auto;
+}
+
+/*==============  Раздел - Как сделать заказ? ===============*/
+
+.info-order {
+  height: 433px;
+  box-shadow-bottom: inset 0 0 3px #e8e8e8;
+  background-color: #fff;
+}
+
+.order-title {
+  padding-top: 68px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #2f4565;
+}
+
+.order-item {
+  float: left;
+  margin-right: 30px;
+  width: 370px;
+}
+
+.order-item:last-child {
+  margin-right: 0;
+}
+
+.order-img {
+  position: relative;
+  margin-left: 134px;
+  margin-top: 54px;
+  margin-bottom: 27px;
+  width: 89px;
+  height: 89px;
+  border: 2px solid #feb326;
+}
+
+.order-img:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto ;
+}
+
+.order-img:hover {
+  transition: transform 1.5s linear;
+  background-color: #feb326;
+  transform: rotate(45deg);
+}
+
+.order-img:hover:before {
+  transition: transform 1.5s linear;
+  transform: rotate(-45deg);
+}
+
+.order-img:hover + .order-text:before {
+  transition: background 2s linear;
+  background-color: #feb326;
+}
+
+.order-img-hand:before {
+  width: 44px;
+  height: 62px;
+  background-image: url(../img/spritesheet.png);
+  background-position: -96px -140px;
+  top: 15px;
+}
+
+.order-img-basket:before {
+  width: 49px;
+  height: 49px;
+  background-image: url(../img/spritesheet.png);
+  background-position: -152px -40px;
+  top: 20px;
+}
+
+.order-img-purse:before {
+  width: 43px;
+  height: 43px;
+  background-image: url(../img/spritesheet.png);
+  background-position: -190px -167px;
+  top: 20px;
+}
+
+.order-text {
+  position: relative;
+  text-align: center;
+}
+
+.order-text:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #3f6295;
+  border-radius: 15px;
+  z-index: 0;
+}
+
+.order-text-number {
+  position: absolute;
+  left: 11px;
+  top: 7px;
+  font-size: 14px;
+  color: #fefefe;
+  z-index: 1;
+}
+
+.order-text-step {
+  position: relative;
+  margin-left: 50px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  width: 270px;
+}
+
+.order-step-link {
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  color: #3f6295;
+}
+
+/*===============  Раздел - Контакты  =================*/
+
+.contact {
+  height: 366px;
+  background-color: #fff;
+}
+
+.contact:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.map {
+  float: left;
+  height: 365px;
+  width: 42.5%;
+}
+
+.contact-wrapper {
+  float: left;
+  width: 57.5%;
+}
+
+.contact-address {
+  margin-left: 30px;
+  width: 670px;
+  box-sizing: border-box;
+}
+
+.contact-address:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.address {
+  margin-top: 30px;
+  width: 670px;
+  font-size: 0;
+}
+
+.address-title {
+  display: inline-block;
+  margin-right: 30px;
+  width: 270px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.address-text {
+  display: inline-block;
+  width: 370px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.time-work {
+  float: left;
+  margin-top: 65px;
+  margin-right: 30px;
+  width: 270px;
+  box-sizing: border-box;
+  border-right: 1px solid #feb326;
+}
+
+.contact-item-text {
+  position: relative;
+  margin-bottom: 19px;
+  margin-left: 50px;
+  width: 170px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contact-item-text:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+}
+
+.contact-img-clock:before {
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/spritesheet.png);
+  background-position: -51px -99px;
+}
+
+.contact-img-car:before {
+  width: 36px;
+  height: 31px;
+  background-image: url(../img/spritesheet.png);
+  background-position: -5px -99px;
+}
+
+.contact-img-weekend:before {
+  width: 31px;
+  height: 31px;
+  background-image: url(../img/spritesheet.png);
+  background-position: -45px -220px;
+  top: 4px;
+  left: -52x;
+}
+
+.info {
+  float: left;
+  margin-top: 65px;
+  width: 370px;
+}
+
+.contact-promo-text {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contact-img-mail {
+  margin-top: 28px;
+}
+
+.contact-img-phone:before {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/spritesheet.png);
+  background-position: -212px -86px;
+  top: -3px;
+}
+
+.contact-img-mail:before {
+  width: 30px;
+  height: 22px;
+  background-image: url(../img/spritesheet.png);
+  background-position: -150px -167px;
+}
+
+.contact-link-phone,
+.contact-link-mail {
+  text-decoration: none;
+  color: #000;
+}
+
+/*=====================  Подвал сайта  =======================*/
+
+.page-footer {
+  height: 230px;
+  background-color: #2f4565;
+}
+
+.footer-logo {
+  float: left;
+  padding-top: 70px;
+  margin-right: 30px;
+  width: 170px;
+}
+
+.footer-nav {
+  float: left;
+  width: 770px;
+  margin-right: 30px;
+  box-sizing: border-box;
+}
+
+.footer-nav-title {
+  margin-top: 45px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #feb326;
+}
+
+.footer-nav-list {
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 30px;
+  width: 170px;
+  vertical-align: top;
+}
+
+.footer-nav-item {
+  font-size: 16px;
+  line-height: 30px;
+  list-style-type: none;
+}
+
+.footer-nav-item a {
+  text-decoration: none;
+  color: #fefefe;
+}
+
+.footer-wrapper {
+  float: left;
+  padding-top: 84px;
+  width: 170px;
+  box-sizing: border-box;
+}
+
+.footer-order-call {
+  font-size: 14px;
+  line-height: 30px;
+  color: #e9a731;
+}
+
+.social {
+  margin-top: 23px;
+}
+
+.social-item {
+  content: '';
+  display: inline-block;
+  margin-right: 16px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/spritesheet.png);
+}
+
+.od {
+  background-position: -211px -45px;
+}
+
+.tw {
+  background-position: -212px -126px;
+}
+
+.vk {
+  background-position: -5px -220px;
+}
+
+
+/*===============================================================
+                      Каталог товаров - Catalog
+================================================================*/
+
+/*============  Реклама в заголовке страницы  ==============*/
+
+.promo-catalog {
+  height: 416px;
+  background: url(../img/fon1-c.jpg) no-repeat;
+  background-size: cover;
+}
+
+.promo-catalog-slogan {
+  padding-top: 190px;
+  margin-left: 200px;
+  width: 670px;
+  font-family: 'Ubuntu';
+  font-size: 25px;
+  line-height: 40px;
+  color: #fff;
+}
+
+/*===============  Каталог аквариумов  ===============*/
+
+.catalog-aquarium {
+  height: 1097px;
+  background: repeating-linear-gradient(-45deg, #bfdaff 5px, #bbd5fb 6px, #a3bde3 7px, #bad4fa 8px);
+}
+
+.catalog-sidebar {
+  float: left;
+  margin-right: 30px;
+  width: 270px;
+}
+
+/*Общий стиль для всех карточек в каталоге*/
+
+.catalog-item {
+  float: left;
+  margin-top: 35px;
+  margin-right: 30px;
+  width: 270px;
+  height: 310px;
+  background: #fff;
+  border-radius: 7px;
+}
+
+.catalog-item:nth-child(3n){
+  margin-right: 0;
+}
+
+/*sidebar*/
+
+.sidebar-nav {
+  background-color: #2f4565;
+}
+
+.sidebar-nav-title {
+  margin-top: 22px;
+  margin-left: 30px;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.sidebar-nav-item {
+  margin-left: 58px;
+  font-size: 16px;
+  line-height: 40px;
+  list-style-type: none;
+}
+
+.sidebar-link{
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebar-link:before {
+  content: '';
+  display: inline-block;
+  margin-right: 13px;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.sidebar-link-active {
+  color: #6a88bd;
+}
+
+.sidebar-link-active:before {
+  content: '';
+  display: inline-block;
+  margin-right: 13px;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: #6a88bd;
+}
+
+.sidebar-img-fish {
+  background: url(../img/banner1.png);
+  background-size: cover;
+}
+
+.sidebar-img-euipment {
+  background: url(../img/banner2.png);
+  background-size: cover;
+  border: 1px solid #000;
+}
+
+.sidebar-promo {
+  text-align: center;
+  color: #fff;
+}
+
+.sidebar-promo-title{
+  margin-top: 125px;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.sidebar-promo-text {
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.btn-orange {
+  margin-top: 13px;
+  margin: 0 auto;
+  background-color: #feb326;
+}
+
+/*Карточки в каталоге*/
+
+.catalog-content {
+  float: left;
+  width: 870px;
+}
+
+.catalog-good {
+  position: relative;
+  overflow: hidden;
+}
+
+.catalog-good-sticker {
+  position: absolute;
+  width: 115px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 700;
+  transform: rotate(45deg);
+  text-align: center;
+  right: -32px;
+  top: 6px;
+}
+
+.catalog-good-sticker-sale {
+  color: #030303;
+  background-image: linear-gradient(to right, #ffd614, #feb326);
+}
+
+.catalog-good-sticker-new {
+  color: #fff;
+  background-image: linear-gradient(to right, #e11c32, #851b28);
+}
+
+.catalog-good:hover {
+  box-shadow: 0 0 18px #2f4565;
+}
+
+
+/*=============================================================
+                  Подробно об элементе - Item
+===============================================================*/
+
+/*========  Хлебные крошки - навигация + фон в заголовке ============*/
+
+.breadcrumbs {
+  height: 249px;
+  background: url(../img/fon1-it.jpg) no-repeat;
+  background-size: cover;
+}
+
+.breadcrumbs-wrapper {
+  padding-top: 156px;
+}
+
+.breadcrumbs-item {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.breadcrumbs-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*=================  Элемент аквариум - общие параметры  ===================*/
+
+.item-catalog {
+  height: 400px;
+  background-color: #e8e8e8;
+}
+
+/*Слайды - вид аквариума */
+/*Переключение происходит за счет кнопочек,а не стрелочки*/
+
+.slide-wrapper {
+  position: relative;
+  float: left;
+  margin-right: 30px;
+  width: 470px;
+  box-sizing: border-box;
+}
+
+.slide-wrapper > input {
+  display: none;
+}
+
+.slider {
+  position: relative;
+  height: 334px;
+  width: 370px;
+  top: -39px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.slides {
+  position: absolute;
+  height: 334px;
+  width: 370px;
+  opacity: 0;
+  box-shadow: 0 0 10px #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.slide2 {
+background-image: url(../img/aquarium2.png);
+background-size: contain;}
+.slide3 {
+background-image: url(../img/aquarium3.png);
+background-size: contain;}
+.slide4 { background-image: url(../img/aquarium4.png);
+background-size: contain;}
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4 {
+  opacity: 1;
+}
+
+.controls {
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  bottom: -13px;
+  left: 103px
+}
+
+.controls-item{
+  display: inline-block;
+  margin-right: 25px;
+  height: 20px;
+  width: 20px;
+  background-color: #2f2f2f;
+  border-radius: 50%;
+}
+
+#slide1:checked ~ .controls .controls-item:nth-of-type(1),
+#slide2:checked ~ .controls .controls-item:nth-of-type(2),
+#slide3:checked ~ .controls .controls-item:nth-of-type(3),
+#slide4:checked ~ .controls .controls-item:nth-of-type(4){
+  background-color: #feb326;
+}
+
+/*Кнопка - стрелка*/
+
+.item-catalog-btn {
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  top: 100px;
+  right: 20px;
+}
+
+.item-catalog-btn:before {
+content:'';
+position: absolute;
+width: 28px;
+height: 4px;
+border: 1px solid #feb326;
+border-radius: 10px 0 0 10px;
+background-color: #feb326;
+transform: rotate(45deg);
+top: 11px;
+}
+
+.item-catalog-btn:after {
+content:'';
+position: absolute;
+width: 28px;
+height: 4px;
+border: 1px solid #feb326;
+border-radius: 10px 0 0 10px;
+background-color: #feb326;
+transform: rotate(-45deg);
+top: 28px;
+}
+
+.item-catalog-btn:active {
+  transform: scale(0.9);
+}
+
+/*Параметры элемента (ширина, высота и т.д)*/
+
+.parameter {
+  position: relative;
+  float: left;
+  width: 670px;
+}
+
+.item-catalog-title {
+  position: absolute;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #fff;
+  top: -48px;
+}
+
+.parameter-title {
+  padding-top: 21px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.parameter-box {
+  margin-top: 19px;
+  margin-bottom: 20px;
+  height: 148px;
+  width: 572px;
+  font-size: 0;
+  border: 1px dotted #acacac;
+}
+
+.option {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 30px;
+  width: 270px;
+  box-sizing: border-box;
+}
+
+.option:nth-child(2n) {
+  margin-right: 0;
+}
+
+.option:nth-child(-n+2) {
+  margin-top: 20px;
+}
+
+.option:nth-child(2n) > .parameter-item {
+  margin-left: 55px;
+}
+
+.option:before {
+  content:'...............................';
+  position: absolute;
+  display: block;
+  font-size: 20px;
+  top: 3px;
+  left: 63px;
+}
+
+.parameter-item {
+  position: relative;
+  float: left;
+  margin-left: 45px;
+  background-color: #e8e8e8;
+}
+
+.parameter-item,
+.parameter-value {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.parameter-item:before {
+  content: '';
+  position: absolute;
+  background-image: url(../img/spritesheet.png);
+}
+
+.img-arrow1:before {
+  width: 7px;
+  height: 23px;
+  background-position: -85px -5px;
+  left: -25px;
+}
+
+.img-arrow4:before {
+  width: 25px;
+  height: 25px;
+  background-position: -153px -5px;
+  top: 3px;
+  left: -40px;
+}
+
+.img-arrow2:before {
+  width: 23px;
+  height: 7px;
+  background-position: -102px -5px;
+  top: 10px;
+  left: -30px;
+}
+
+.img-arrow5:before {
+  width: 27px;
+  height: 28px;
+  background-position: -85px -40px;
+  top: 3px;
+  left: -38px;
+}
+
+.img-arrow3:before {
+  width: 8px;
+  height: 22px;
+  background-position: -135px -5px;
+  left: -25px;
+}
+
+.img-arrow6:before {
+  width: 16px;
+  height: 22px;
+  background-position: -188px -5px;
+  top: 3px;
+  left: -35px;
+}
+
+.parameter-value {
+  position: relative;
+  float: right;
+  right: 40px;
+  background-color: #e8e8e8;
+}
+
+/*========  Описание элемента + доп комплектация  ============*/
+
+.description-item {
+  height: 496px;
+}
+
+/*Комплектация*/
+
+.complect {
+  float:left;
+  margin-right: 100px;
+  width: 500px;
+  height: 496px;
+  box-sizing: border-box;
+  border-right: 1px solid #d0d0d0;
+}
+
+.complect-title {
+  padding-top: 54px;
+  padding-bottom: 32px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.complect-item {
+  display: inline-block;
+  margin-right: 30px;
+  width: 171px;
+  vertical-align: top;
+}
+
+.complect-item-link {
+  display: block;
+  box-shadow: 0 0 7px #e3e3e3;
+}
+
+.complect-item-link:hover {
+  box-shadow: 0 0 10px #777171;
+}
+
+.complect-item-title {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+}
+
+.complect-item-volume,
+.complect-item-width {
+  font-size: 16px;
+  line-height: 36px;
+  color: #2f4565;
+}
+
+.complect-item-height {
+  line-height: 16px;
+}
+
+/*Описание элемента*/
+
+.description {
+  float: left;
+  width: 570px;
+  box-sizing: border-box;
+}
+
+.description-title {
+  margin-top: 58px;
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.description-text {
+  margin-top: 25px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.recommended-fish {
+  margin-top: 55px;
+}
+
+.recommended-fish {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.recommended-fish-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.recommended-fish-text {
+  position: relative;
+  float: left;
+  margin-top: 21px;
+  margin-right: 30px;
+  padding-left: 60px;
+  margin-bottom: 23px;
+  width: 270px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 20px;
+  box-sizing: border-box;
+}
+
+.recommended-fish-text:nth-child(2n) {
+  margin-right: 0;
+}
+
+.recommended-fish-text:before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 31px;
+  background-image: url(../img/spritesheet.png);
+  background-position: -5px -167px;
+  top: -3px;
+  left: 0;
+}
+
+.recommended-fish-right {
+  padding-left: 65px;
+}
+
+/*===========  Рекомендованные товары (рыбы, корм, наполнители)  ==========*/
+
+.recommended-good {
+  height: 479px;
+  background-color: #e8e8e8;
+}
+
+.recommended-good-title {
+  padding-top: 59px;
+  font-size: 30px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.recommended-wrapper{
+  margin-top: 43px;
+}
+
+.recommended-wrapper:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/*================  Похожие товары  ================*/
+
+.similar-good {
+  height: 508px;
+  background-color: #fff;
+}
+
+.similar-good-title {
+  padding-top: 63px;
+  font-size: 30px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.similar-wrapper {
+  margin-top: 50px;
+}
+
+.similar-wrapper:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+/*===============================================================
+                          Форма заказа
+=================================================================*/
+
+
+/*Фон в заголовке*/
+
+.fon-header-form {
+  height: 247px;
+  background: url(../img/fon1-f.jpg) no-repeat;
+  background-size: cover;
+}
+
+.form {
+  height: 350px;
+  background-color: #e8e8e8;
+}
+
+.form-wrapper {
+  position: relative;
+  height: 350px;
+}
+
+.form-title {
+  position: absolute;
+  font-size: 30px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #fff;
+  left: 100px;
+  top: -100px;
+}
+
+.form-order {
+  position: absolute;
+  border-radius: 7px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #000;
+  top: -57px
+}
+
+.form-order:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.form-good {
+  float: left;
+  padding-top: 30px;
+  margin-right: 30px;
+  padding-left: 100px;
+  width: 470px;
+  height: 320px;
+  box-sizing: border-box;
+  border-right: 1px solid #d0d0d0;
+}
+
+.form-good-title {
+  width: 270px;
+}
+
+.form-good-title,
+.form-good-number {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #9d9d9d;
+}
+
+.form-item {
+  margin-bottom: 9px;
+}
+
+.item-name {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  color: #171f30;
+}
+
+.good-item-name {
+  width: 270px;
+  font-weight: 700;
+}
+
+.good-item-select {
+  padding-left: 20px;
+  width: 45px;
+}
+
+.good-item-select,
+.delivery-item-select,
+.personal-item-select {
+  font-size: 14px;
+  height: 30px;
+  color: #939393;
+  border: 1px dotted #dcdcdc;
+  border-radius: 3px;
+}
+
+.form-delivery {
+  float: left;
+  padding-top: 60px;
+  margin-right: 30px;
+  width: 270px;
+  height: 320px;
+  box-sizing: border-box;
+}
+
+.delivery-item-name {
+  margin-right: 15px;
+  width: 120px;
+}
+
+.delivery-item-select {
+  padding-left: 5px;
+  width: 130px;
+  height: 33px;
+}
+
+.personal-data {
+  float: left;
+  padding-top: 60px;
+  width: 370px;
+  height: 320px;
+  box-sizing: border-box;
+  border-left: 1px solid #d0d0d0;
+}
+
+.personal-item-name {
+  margin-right: 5px;
+  margin-left: 28px;
+  width: 62px;
+}
+
+.personal-item-select {
+  padding-left: 5px;
+  width: 165px;
+}
+
+.form-btn{
+  margin-left: 95px;
+  margin-top: 35px;
+  border: 1px solid #3f6295;
+}
+
+
+
+
+

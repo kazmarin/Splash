@@ -1,0 +1,179 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-aquarium {
+    width: 30px;
+    height: 30px;
+    background-position: -5px -5px;
+}
+
+.sprite-aquarium-active {
+    width: 30px;
+    height: 30px;
+    background-position: -45px -5px;
+}
+
+.sprite-arrow1 {
+    width: 7px;
+    height: 23px;
+    background-position: -85px -5px;
+}
+
+.sprite-arrow2 {
+    width: 23px;
+    height: 7px;
+    background-position: -102px -5px;
+}
+
+.sprite-arrow3 {
+    width: 8px;
+    height: 22px;
+    background-position: -135px -5px;
+}
+
+.sprite-arrow4 {
+    width: 25px;
+    height: 25px;
+    background-position: -153px -5px;
+}
+
+.sprite-arrow5 {
+    width: 27px;
+    height: 28px;
+    background-position: -85px -40px;
+}
+
+.sprite-arrow6 {
+    width: 16px;
+    height: 22px;
+    background-position: -188px -5px;
+}
+
+.sprite-basket-header {
+    width: 20px;
+    height: 20px;
+    background-position: -122px -37px;
+}
+
+.sprite-basket-order {
+    width: 49px;
+    height: 49px;
+    background-position: -152px -40px;
+}
+
+.sprite-car {
+    width: 36px;
+    height: 31px;
+    background-position: -5px -99px;
+}
+
+.sprite-clock {
+    width: 35px;
+    height: 35px;
+    background-position: -51px -99px;
+}
+
+.sprite-equipment {
+    width: 30px;
+    height: 27px;
+    background-position: -96px -99px;
+}
+
+.sprite-feed {
+    width: 25px;
+    height: 31px;
+    background-position: -136px -99px;
+}
+
+.sprite-fish {
+    width: 31px;
+    height: 24px;
+    background-position: -171px -99px;
+}
+
+.sprite-fish-active {
+    width: 31px;
+    height: 24px;
+    background-position: -171px -133px;
+}
+
+.sprite-fish-big {
+    width: 40px;
+    height: 31px;
+    background-position: -5px -167px;
+}
+
+.sprite-ground {
+    width: 30px;
+    height: 28px;
+    background-position: -55px -167px;
+}
+
+.sprite-hand {
+    width: 44px;
+    height: 62px;
+    background-position: -96px -140px;
+}
+
+.sprite-mail {
+    width: 30px;
+    height: 22px;
+    background-position: -150px -167px;
+}
+
+.sprite-number1 {
+    width: 30px;
+    height: 30px;
+    background-position: -214px -5px;
+}
+
+.sprite-number2 {
+    width: 30px;
+    height: 30px;
+    background-position: -5px -45px;
+}
+
+.sprite-number3 {
+    width: 30px;
+    height: 30px;
+    background-position: -45px -45px;
+}
+
+.sprite-odnoklas {
+    width: 31px;
+    height: 31px;
+    background-position: -211px -45px;
+}
+
+.sprite-phone {
+    width: 30px;
+    height: 30px;
+    background-position: -212px -86px;
+}
+
+.sprite-purse {
+    width: 43px;
+    height: 43px;
+    background-position: -190px -167px;
+}
+
+.sprite-twitter {
+    width: 30px;
+    height: 30px;
+    background-position: -212px -126px;
+}
+
+.sprite-vk {
+    width: 30px;
+    height: 30px;
+    background-position: -5px -220px;
+}
+
+.sprite-weekend {
+    width: 31px;
+    height: 31px;
+    background-position: -45px -220px;
+}

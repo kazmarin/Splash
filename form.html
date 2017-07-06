@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма заказа</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="container">
+
+        <a href="index.html" class="logo">
+          <img src="img/logo.png" width="77" height="79" alt="splash">
+        </a>
+
+      <nav class="main-nav">
+        <ul>
+          <li class="main-nav-item"><a href="catalog.html">Каталог</a></li>
+          <li class="main-nav-item"><a href="index.html#question-order">Вопросы</a></li>
+          <li class="main-nav-item"><a href="index.html#contact">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a href="#" class="basket basket-full">Корзина</a>
+
+      <a href="#" class="order-call">Заказать обратный звонок</a>
+
+    </div>
+  </header>
+
+  <main>
+
+    <div class="fon-header-form"></div>
+
+    <div class="form">
+      <div class="container">
+
+        <div class="form-wrapper">
+
+          <h2 class="form-title">Форма заказа</h2>
+
+          <form class="form-order" action="https://httpbin.org/post" method="post">
+
+            <div class="form-good">
+              <span class="form-good-title">Наименование</span>
+              <span class="form-good-number">Количество</span>
+
+              <div class="form-item">
+                <span class="item-name good-item-name">1. Аквариум 2567 Панорамный</span>
+                <input class="good-item-select" type="number" name="number" placeholder="1" min="0" step="1">
+              </div>
+
+              <div class="form-item">
+                <span class="item-name good-item-name">2. Сом пресноводный</span>
+                <input class="good-item-select" type="number" name="number" placeholder="5" min="0" step="1">
+              </div>
+
+              <div class="form-item">
+                <span class="item-name good-item-name">3. Золотая рыбка обычная</span>
+                <input class="good-item-select" type="number" name="number" placeholder="3" min="0" step="1">
+              </div>
+            </div>
+
+            <div class="form-delivery">
+              <div class="form-item">
+                <span class="item-name delivery-item-name">Способ доставки</span>
+                <select class="delivery-item-select" name="delivery" size="1">
+                  <option>самовывоз</option>
+                  <option>курьер</option>
+                </select>
+              </div>
+              <div class="form-item">
+                <span class="item-name delivery-item-name">Способ оплаты</span>
+                <select class="delivery-item-select" name="payment" size="1">
+                  <option>безналичными</option>
+                  <option selected >наличными</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="personal-data">
+              <div class="form-item">
+                <label>
+                  <span class="item-name personal-item-name">Имя</span>
+                  <input class="personal-item-select" type="text" name="name" required />
+                </label>
+              </div>
+
+              <div class="form-item">
+                <label>
+                  <span class="item-name personal-item-name">Фамилия</span>
+                  <input class="personal-item-select" type="text" name="surname" required />
+                </label>
+              </div>
+
+              <div class="form-item">
+                <label>
+                  <span class="item-name personal-item-name">Телефон</span>
+                  <input class="personal-item-select" type="tel" pattern="[0-9]{5,11}" placeholder="8(911)567-23-45" name="phone" required />
+                </label>
+              </div>
+              <button class="btn form-btn" type="submit">Оформить заказ</button>
+
+            </div>
+
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+
+      <a href="index.html" class="footer-logo">
+          <img src="img/logo.png" alt="splash">
+        </a>
+
+      <nav class="footer-nav">
+        <h2 class="footer-nav-title">Каталог</h2>
+
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item"><a href="index.html#fish">Рыбы</a></li>
+          <li class="footer-nav-item"><a href="catalog.html">Аквариумы</a></li>
+          <li class="footer-nav-item"><a href="#">Корма</a></li>
+        </ul>
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item"><a href="#">Оборудование</a></li>
+          <li class="footer-nav-item"><a href="#">Грунты и наполнители</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-wrapper">
+
+        <a href="#" class="footer-order-call">Заказать обратный звонок</a>
+
+        <div class="social">
+          <a href="#" class="social-item od"></a>
+          <a href="#" class="social-item tw"></a>
+          <a href="#" class="social-item vk"></a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
